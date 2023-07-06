@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+
+    container_name: python_project
+
+    volumes:
+      - ../:/workspaces
+
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity
+    env_file:
+      - redis.env
+
+    # Runs app on the same network as the database container, allows "forwardPorts" in devcontainer.json function.
+    network_mode: service:db
+
+    # Use "forwardPorts" in **devcontainer.json** to forward an app port locally.
+    # (Adding the "ports" property to this file will not forward from a Codespace.)
+
+  db:
+    image: redis
+    container_name: redis_for_python
+    restart: always        
+    volumes:
+      - ../redis:/data
+    ports:
+      - 6379:6379 
+    env_file:
+      - redis.env     
+    command: /bin/sh -c "redis-server --requirepass $$REDIS_HOST_PASSWORD"
+    
+
+    
+
+
