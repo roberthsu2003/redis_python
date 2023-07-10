@@ -21,5 +21,9 @@ user_connection.ping()
 True
 ```
 
-## [基本的get和set的使用](基本的get和set的使用)
+## 1. [type String的使用](type String的使用)
+## 2. type list的使用
+## 3. type hash的使用
+## 4. type set的使用
+## 5. type json的使用
 

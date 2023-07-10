@@ -1,4 +1,4 @@
-## 基本的get和set的使用
+## type String的使用
 
 ```python
 #設定full_name
