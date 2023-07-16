@@ -1,4 +1,4 @@
-## type String的使用
+## string的使用
 
 ```python
 #設定full_name
