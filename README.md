@@ -21,9 +21,9 @@ user_connection.ping()
 True
 ```
 
-## 1. [type String的使用](type String的使用)
-## 2. type list的使用
-## 3. type hash的使用
-## 4. type set的使用
-## 5. type json的使用
+## 1. [string的使用](./String的使用/)
+## 2. [list的使用](./list的使用/)
+## 3. [hash的使用](./hash的使用/)
+## 4. [set的使用](./set的使用/)
+## 5. [json的使用](./json的使用/)
 
