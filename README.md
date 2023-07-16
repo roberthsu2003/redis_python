@@ -15,7 +15,6 @@ import os
 user_connection = redis.Redis(host='localhost', port=6379, password=os.environ['REDIS_HOST_PASSWORD'], decode_responses=True)
 
 user_connection.ping()
-user_connection.ping()
 
 結果================
 True
