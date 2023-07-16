@@ -73,3 +73,38 @@ print(res)
 true
 ```
 
+## 實際案例
+
+```python
+#加入50位學生,5個分數
+import random
+import redis
+import os
+
+user_connection = redis.Redis(host='localhost', port=6379, password=os.environ['REDIS_HOST_PASSWORD'], decode_responses=True)
+
+user_connection.ping()
+
+#檢查是否有學生分數
+#如果沒有加入學生分數
+if not user_connection.exists("name:1"):
+    print("學生尚未加入")
+    for i in range(50):
+        key = f"name:{i}"
+        scores = []
+        for _ in range(5):
+            scores.append(random.randint(50,100))
+        user_connection.lpush(key,*scores)
+
+#取出學生資料
+for i in range(50):
+        key = f"name:{i}"
+        scores = user_connection.lrange(key,0,-1)
+        print(key)
+        print(scores)
+        print("============")
+        
+#清除所有資料
+#user_connection.flushdb()
+```
+
