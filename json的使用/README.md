@@ -1,4 +1,7 @@
 ## json的使用
+### [官方範例](https://developer.redis.com/howtos/redisjson/using-python/)
+
+### [JSONpath](https://redis.io/docs/data-types/json/path/)
 
 ### JSONpath
 
