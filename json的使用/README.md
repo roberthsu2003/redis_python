@@ -3,7 +3,7 @@
 
 ### [JSONpath](https://redis.io/docs/data-types/json/path/)
 
-### JSONpath
+### JSON Path
 
 - 使用redis cli
 
@@ -176,4 +176,11 @@ JSON.GET store $..headphones[0].colors
 結果:==================================
 "[[\"black\",\"silver\",\"pink\"]]"
 ```
+
+## python操控
+### 範例實作檔
+- [sample.ipynb](./sample.ipynb)
+- [sample1.ipynb](./sample1.ipybn)
+- [sample2.ipynb](./sample1.ipynb)
+
 
