@@ -5,6 +5,8 @@
 
 ### JSONpath
 
+- 使用redis cli
+
 ```json
 #json樣本
 
