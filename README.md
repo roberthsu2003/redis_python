@@ -5,6 +5,11 @@
 ## python操控redis
 [參考來源](https://redis.readthedocs.io/en/stable/examples.html)
 
+## 連線至Render
+
+```
+renderRedis = redis.Redis.from_url('rediss://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:6379')
+```
 
 ## 連線redis,密碼儲存於環境變數內
 
