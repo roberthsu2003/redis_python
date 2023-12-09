@@ -5,6 +5,9 @@
 ## python操控redis
 [參考來源](https://redis.readthedocs.io/en/stable/examples.html)
 
+## 安裝redis GUI(redisInsight)
+https://redis.com/redis-enterprise/redis-insight/
+
 ## 連線至Render
 
 ```
