@@ -14,6 +14,12 @@ https://redis.com/redis-enterprise/redis-insight/
 
 ![](./images/pic1.png)
 
+## 安裝redis套件
+
+```
+$ pip install redis 
+```
+
 
 ## 連線至Render
 
