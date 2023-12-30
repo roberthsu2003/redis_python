@@ -8,6 +8,13 @@
 ## 安裝redis GUI(redisInsight)
 https://redis.com/redis-enterprise/redis-insight/
 
+## redisInsight加入redis server
+- 不要單獨設,不好連線
+- 一次填入redis提供的密碼(如下圖)
+
+![](./images/pic1.png)
+
+
 ## 連線至Render
 
 ```
